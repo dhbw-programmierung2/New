@@ -169,9 +169,13 @@ public class BeginController {
 			}
 		}
 		if (maxList.size() > 1){
+			JOptionPane.showMessageDialog(null, "Spieler " + maxList.get(new Random().nextInt(maxList.size())) + " beginnen. Viel Spass","Spielbeginn", JOptionPane.INFORMATION_MESSAGE);
 			return maxList.get(new Random().nextInt(maxList.size()));
 		} else {
+			int ausgabe = cubeNumber.indexOf(max) +1 ;
+			JOptionPane.showMessageDialog(null, "Spieler " + ausgabe + " beginnen. Viel Spass","Spielbeginn", JOptionPane.INFORMATION_MESSAGE);
 			return cubeNumber.indexOf(max);
+			
 		}
 	}
 	
